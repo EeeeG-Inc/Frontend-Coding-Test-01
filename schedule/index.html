@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2022年7月1日</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="mb-5">2022年7月1日</h1>
+
+      <div class="text-end">
+        <button
+          onclick="location.href='./create.html'"
+          class="btn btn-primary"
+          >新規作成</buton>
+        <button
+          onclick="location.href='../index.html'"
+          class="btn btn-secondary"
+        >戻る</buton>
+      </div>
+
+      <table class="schedule table table-striped mt-4">
+        <thead>
+          <tr class="schedule_head">
+            <th>スケジュール名</th>
+            <th>開始時刻</th>
+            <th>終了時刻</th>
+            <th>アクション</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="./show.html">A社とミーティング</a></td>
+            <td>10:00</td>
+            <td>12:00</td>
+            <td>
+              <button
+                onclick="location.href='./edit.html'"
+                class="btn btn-info">
+              編集
+              </button>
+              <button type="button" class="btn btn-danger" onclick="deleteAlert('A社とミーティング')">
+                削除
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="./show.html">コーディング試験</a></td>
+            <td>16:00</td>
+            <td>17:30</td>
+            <td>
+              <button
+                onclick="location.href='./edit.html'"
+                class="btn btn-info">
+              編集
+              </button>
+              <button type="button" class="btn btn-danger" onclick="deleteAlert('コーディング試験')">
+                削除
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="./show.html">オンライン英会話をはじめる</a></td>
+            <td>20:00</td>
+            <td>20:40</td>
+            <td>
+              <button
+                onclick="location.href='./edit.html'"
+                class="btn btn-info">
+              編集
+              </button>
+              <button type="button" class="btn btn-danger" onclick="deleteAlert('オンライン英会話をはじめる')">
+                削除
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="./show.html">飲み会に合流する</a></td>
+            <td>21:00</td>
+            <td>23:00</td>
+            <td>
+              <button
+                onclick="location.href='./edit.html'"
+                class="btn btn-info">
+              編集
+              </button>
+              <button type="button" class="btn btn-danger" onclick="deleteAlert('飲み会に合流する')">
+                削除
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="./show.html">ゴミ袋を買って帰る</a></td>
+            <td>24:00</td>
+            <td>1:00</td>
+            <td>
+              <button
+                onclick="location.href='./edit.html'"
+                class="btn btn-info">
+              編集
+              </button>
+              <button type="button" class="btn btn-danger" onclick="deleteAlert('ゴミ袋を買って帰る')">
+                削除
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="fixed-bottom">
+        <footer>&copy; EeeeG, Inc.</footer>
+      </div>
+
+    </div>
+  </body>
+</html>
+
+<script language="JavaScript">
+  function deleteAlert(schedule) {
+    confirm('本当に「' + schedule + '」を削除してもよろしいでしょうか？');
+  }
+</script>

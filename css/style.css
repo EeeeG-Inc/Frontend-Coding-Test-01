@@ -1,0 +1,128 @@
+/*
+ * HTML
+ */
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  margin-bottom: 56px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+th {
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  height: 128px;
+}
+
+button {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+footer {
+  background-color: #89c7de;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 0;
+  bottom: 0;
+}
+
+/*
+ * CLASS
+ */
+
+.calendar, .schedule {
+  table-layout: fixed;
+}
+
+.calendar td, .schedule td {
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.calendar td {
+  width: 128px;
+  height: 128px;
+}
+
+.week {
+  height: 128px;
+}
+
+.day_of_week {
+  text-align: center;
+}
+
+.day_of_week th {
+  padding: 4px 0;
+}
+
+.day {
+  padding: 0 !important;
+}
+
+.day a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #212529;
+}
+
+.day p {
+  text-align: center;
+}
+
+.day:hover {
+  color: #000080;
+  background-color: #ccffff;
+}
+
+.weekday, .sun, .holiday, .sat {
+  width: 160px;
+  margin-left: 4px;
+}
+
+.weekday {
+  color: #000000;
+}
+
+.sun, .holiday {
+  color: #ff0000;
+}
+
+.sat {
+  color: #4682b4;
+}
+
+.today {
+  background: #99ffcc;
+}
+
+.button_wrap {
+  margin: 32px 0 32px 0;
+  text-align: center;
+}
+
+.schedule {
+  font-size: 16px;
+}
+
+.schedule p {
+  margin: 0;
+}
+
+.next, .prev {
+  color: #0000ee;
+  text-decoration: none;
+}
